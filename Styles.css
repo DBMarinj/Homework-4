@@ -1,0 +1,109 @@
+body {
+background-color: chocolate;
+}
+
+h4 {
+    background-color: beige;
+}
+.title {
+border: 2px solid black;
+font-size: 40px;
+color: rgb(48, 53, 53);
+width: 20vw;
+margin: auto;   /* si meto el titulo en un div no me funciona lo anterior*/
+display: flex;  /* ordena en fila */
+flex-direction: column;  /* ordena en columna */
+}
+
+.title3 {
+    font-size: 2em;   /* em significa 3 veces el tamaño de la fuente base */
+    width: 40vw;    /* ancho y sirve también para centrar */
+    margin: auto;  /* margen automatico, para que se centre debe tener el width */
+}
+
+.foto1 {
+    width: 200px; 
+    height: 300px; 
+}
+
+.foto2 {
+    width: 200px;
+    height: 300px; 
+}
+
+.foto3 {
+    width: 200px;  /* ancho  */
+    height: 300px;  /* largo  */
+}
+
+.target {
+    border: 2px slateblue;
+    width: fit-content;      /* fit-content: que el contenido me diga el ancho*/
+    
+}
+
+.cards {
+    border: 2px solid green;
+    width: fit-content;
+    padding: 1px 1em 2em 2em;  /*  opx significa arriba- 1em derecha- 1em abajo - 1em izquierda */
+    border-radius: 10%;   /* % en el que se va a redondear el borde  */
+    transition: 1s;  /*  seudoselector transition, se demora 5 segundos el proceso del hover cuando pasa el mouse */
+    display: flex; 
+    flex-direction: column;
+    gap: 2em; /*  sirve para separar el título d ela imagen, pero antes debe ir los dos renplones anteriors (displey y flex-direction)*/
+    align-items: center;
+
+}
+
+.cards2 {
+    border: 2px solid green;
+    width: fit-content;
+    padding: 1px 1em 2em 2em;  /*  opx significa arriba- 1em derecha- 1em abajo - 1em izquierda */
+    border-radius: 10%;   /* % en el que se va a redondear el borde  */
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center; /*Se centran todos los elementos */
+    
+}
+
+
+.cards:hover{    /* seudoselector hover, rellena lo de adentro del borde de otro color cuando pase el mouse*/
+    background-color: rgb(96, 172, 244);
+
+}
+
+.cards2:hover
+{
+    background-color: rgb(76, 16, 172);
+}
+
+#principal {
+    font-size: 30px;
+}
+
+#titulos {
+    border: 2px solid blue;
+    width: 35vw;              /* VM (viewport width) significa 35 % de la pantalla */
+    margin: 2em;  /*propiedad margen se despegan 2 veces la margen de los elementos que lo rodean, se centra*/
+    padding: 1em;  /* propiedad pading se despega lo pegado dentro de un contenedor*/
+}
+
+#cards-container {
+    background-color: aqua;
+    width: 85vw;
+    margin: auto;
+    margin-top: 1.5em;
+    border: 2px solid black;
+    border-radius: 4%;
+    padding: 2em;
+    display: flex; /* un contenedor de tipo FLEX posiciona los elementos en una fila */
+    flex-direction: row; /* row es fila  */
+    justify-content: space-evenly;  /* flex-start; todos los elementos a la izquierda---flex-end; a la derecha---
+                                    space-around misma distancia---pace-between misma distancia entre ellos---
+                                    evenly  todos los elementos tienen la misma distancia respecto a ellos y el borde*/
+    
+
+
+}
